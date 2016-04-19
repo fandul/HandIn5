@@ -24,7 +24,7 @@ HTTP Long-polling is a technique used to push updates to a web client. A connect
   Long polling is a lot more intensive on the server,         You are notified WHEN the server event happens with no delay.
   but more widely accepted for browsers.
 
-=======================================================================================================================================  3. What is HTTP streaming, SSE (Server sent events)?
+======================================================================================================================================= 3. What is HTTP streaming, SSE (Server sent events)?
 =======================================================================================================================================
  When communicating using SSEs, a server can push data to your app whenever it wants, without the need to make an initial request. In other words, updates can be streamed from server to client as they happen. SSEs open a single unidirectional channel between server and client.
 =======================================================================================================================================
@@ -41,7 +41,8 @@ Faster communication between client and server.
 6. Explain and demonstrate the process of WebSocket communication - From connecting client to server,
 through sending messages, to closing connection.
 =======================================================================================================================================
-1. Client makes http request to server. An upgrade header is included that tells to server that clients wants to establish websocket connection.
+
+ Client makes http request to server. An upgrade header is included that tells to server that clients wants to establish websocket connection.
 
 Initial websocket request:
 
@@ -51,7 +52,7 @@ Connection: Upgrade
 Host: websocket.example.com
 Upgrade: websocket
 
-2. If the server supports the WebSocket protocol, it agrees to the upgrade and communicates this through an Upgrade header in the response. So then handshake is made between client and server.
+ If the server supports the WebSocket protocol, it agrees to the upgrade and communicates this through an Upgrade header in the response. So then handshake is made between client and server.
 
 server response:
 
@@ -60,8 +61,9 @@ Date: Wed, 16 Oct 2013 10:07:34 GMT
 Connection: Upgrade
 Upgrade: WebSocket
 
-3. Now that the handshake is complete the initial HTTP connection is replaced by a WebSocket connection that uses the same underlying TCP/IP connection. At this point either party can starting sending data (messages etc.)
-4. Messages can be sent via 
+ Now that the handshake is complete the initial HTTP connection is replaced by a WebSocket connection that uses the same underlying TCP/IP connection. At this point either party can starting sending data (messages etc.)
+
+ Messages can be sent via 
 =======================================================================================================================================
 7. What's the advantage of using libraries like Socket.IO, Sock.JS, WS, over pure WebSocket libraries in the
 backend and standard APIs on frontend? Which problems do they solve?
@@ -71,7 +73,8 @@ backend and standard APIs on frontend? Which problems do they solve?
 8. What is Backend as a Service, Database as a Service, why would you consider using Firebase in your
 projects?
 =======================================================================================================================================
-BaaS is a model 
+BaaS is a model for providing web and mobile app developers with a way to link their applications to backend cloud storage and APIs exposed by back end applications while also providing features such as user management, push notifications, and integration with social networking services.
+  
 =======================================================================================================================================
 9. Explain the pros & cons of using a Backend as a Service Provider like Firebase.
 =======================================================================================================================================
