@@ -74,15 +74,20 @@ backend and standard APIs on frontend? Which problems do they solve?
 projects?
 =======================================================================================================================================
 BaaS is a model for providing web and mobile app developers with a way to link their applications to backend cloud storage and APIs exposed by back end applications while also providing features such as user management, push notifications, and integration with social networking services.
+  Database as a Service is a cloud-based approach to the storage and management of structured data. It delivers similar functionality as a relational database maangment systems.
+Firebase is suitable for handling real time data updates. Built-in support for authentication services like Facebook, Google, and Twitter. Robust APIs for Javascript (including several frameworks like Angular), iOS, and Android.
   
 =======================================================================================================================================
 9. Explain the pros & cons of using a Backend as a Service Provider like Firebase.
 =======================================================================================================================================
-
+                      Pros                                                              Cons
+Stored in the cloud so readily available everywhere.                     Implementation of REST API could be difficult on embedded     Autoscaling built-in.                                                    platforms.
+Robust APIs for Javascript (including several frameworks like Angular),  query capabilities are very limited.
+iOS, and Android.
 =======================================================================================================================================
 10. Explain and demonstrate “three-way data binding” using Firebase and Angular.
 =======================================================================================================================================
-
+By syncing your Angular model with Firebase, your app’s data in the model is synchronized in real-time across all clients. When data changes in one client, those updates are immediately persisted to Firebase and rendered across all clients. This is called Thee-way data binding.
 =======================================================================================================================================
 11. Explain and demonstrate the difference between the simple chat system in your own WebSocket + Node.js
 backend vs. Firebase.
